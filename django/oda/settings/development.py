@@ -24,6 +24,8 @@ if 'test' in sys.argv:
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
+    'proddemo',
+    'proddemo.lan.hex-rays.com',
 ]
 
 # Hard-code secret key for development (DO NOT make the same key as production)
