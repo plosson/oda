@@ -5,11 +5,11 @@ COMPRESS_ENABLED = False
 
 DATABASES = {
     'default': {
-        'ENGINE':   'django.db.backends.mysql',
+        'ENGINE':   'django.db.backends.postgresql',
         'NAME':     'odapython3',
-        'USER':     'root',
+        'USER':     'postgres',
         'PASSWORD': 'password',
-        'HOST':     'localhost',         # Set to empty string for localhost.
+        'HOST':     'db',         # Set to empty string for localhost.
         'PORT':     '',                  # Set to empty string for default.
     }
 }
@@ -22,8 +22,11 @@ if 'test' in sys.argv:
     }
 
 ALLOWED_HOSTS = [
+    '*',
     'localhost',
     '127.0.0.1',
+    'proddemo',
+    'proddemo.lan.hex-rays.com',
 ]
 
 # Hard-code secret key for development (DO NOT make the same key as production)

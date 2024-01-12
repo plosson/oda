@@ -1,0 +1,8 @@
+.env
+.github
+.idea
+.vagrant
+decompiler
+doc
+*/node_modules
+postgres-data
